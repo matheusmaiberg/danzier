@@ -8,7 +8,7 @@
   font-weight: bold;
 }
 
-:root{
+:root {
   /* fontes */
   --font-padrao: 'Open Sans', sans-serif;
   --font-destaque: 'Bomberg', serif;
@@ -21,61 +21,18 @@
   --cor5: #000031;
 }
 
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
 
-a{
-  text-decoration: none;
-}
-
-
-button{
-  padding: 12px 20px;
-  background-color: #080844;
-  color: white;
-  font-family: var(--font-padrao);
-  font-size: 1em;
-  font-weight: 500;
-  border: none;
-  border-radius: 10px;
-}
-
-body{
+/* Body */
+body {
   background-color: white;
   font-family: var(--font-padrao);
 }
 
-header{
-  max-height: 100px;
-  text-align: center;
-}
-
-header>img{
-  width: 30%;
-}
-
-nav>a{
-  color: black;
-  font-weight: 600;
-  padding: 15px;
-}
-
-h1{
-  font-family: var(--font-destaque);
-  font-size: 3em;
-}
-
-p{
-  font-size: 1em;
-}
-
-.principal{
-  width: 100%;
-}
-
-.detalhe{
+.detalhe {
   font-size: 1em;
   color: var(--cor3);
   font-weight: 600;
@@ -83,6 +40,658 @@ p{
   text-transform: uppercase;
 }
 
-.titulo{
+.titulo {
   font-family: var(--font-destaque);
+}
+
+/* Header */
+.header {
+  margin: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  
+}
+
+.header img {
+  max-width: 200px;
+  height: auto;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  order: -1;
+}
+
+.header nav {
+  display: flex;
+  
+}
+
+.header nav a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+header button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+.consultor-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.consultor-icon {
+  display: none; /* Esconde a imagem do ícone por padrão */
+}
+
+.text-principal{
+  display: none;
+}
+
+/* Main */
+main {
+  padding: 0;
+  /* Resetando o padding da main */
+}
+
+section {
+  padding: 0;
+  /* Resetando o padding de todas as sections */
+}
+
+section+section {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Banner principal */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Loja */
+div.loja {
+  padding: 70px 0px;
+  text-align: center;
+}
+
+div.loja h2 {
+  font-size: 2em;
+}
+
+/* Pink Fantasia */
+div.pink {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px 40px 0px 40px;
+  margin-bottom: 50px;
+  background-color: var(--cor2);
+  border-radius: 20px;
+}
+
+div.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 280px;
+}
+
+div.texto p {
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+div.texto h2 {
+  padding-bottom: 10px;
+}
+
+div.texto button {
+  margin-top: 10px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+div.imagem img {
+  width: 450px;
+  height: 100%;
+  float: right;
+}
+
+/* Gold */
+div.gold {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px 40px 20px 0px;
+  margin-bottom: 50px;
+  background-color: var(--cor2);
+  border-radius: 20px;
+}
+
+div.imagem2 img {
+  width: 450px;
+  height: 100%;
+  float: left;
+}
+
+div.texto2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 290px;
+}
+
+div.texto2 p {
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+div.texto2 h2 {
+  padding-bottom: 10px;
+}
+
+div.texto2 button {
+  margin-top: 10px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+/* Ampolas */
+div.ampola {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0px 40px 40px 40px;
+  margin-bottom: 50px;
+  background-color: var(--cor2);
+  border-radius: 20px;
+}
+
+div.imagem3 img {
+  width: 450px;
+  height: 100%;
+  float: right;
+}
+
+div.texto3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 300px;
+  padding-top: 20px;
+}
+
+div.texto3 p {
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+div.texto3 h2 {
+  padding-bottom: 10px;
+}
+
+div.texto3 button {
+  margin-top: 10px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+/* Sobre nós */
+.sobre {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 120px;
+}
+
+div.socios img {
+  margin-top: 50px;
+  width: 550px;
+  height: 575px;
+  object-fit: cover;
+  border-radius: 150px 20px 20px 20px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+.desc2 p {
+  padding-bottom: 5px;
+  padding-right: 50px;
+}
+
+.desc2 h2 {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+.desc2 button {
+  margin: 15px 0px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--cor2);
+  padding: 50px 100px;
+  border-radius: 20px;
+  margin: 20px 0px -100px -150px;
+}
+
+.info p {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.info p strong {
+  font-size: 1.8em;
+  display: inline-block;
+  /* Garante que o strong seja tratado como um bloco */
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+/* Catalogo */
+section.catalogo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  background-color: var(--cor4);
+}
+
+div.folha {
+  background-color: var(--cor5);
+  background-image: url(imagens/folhas.png);
+  background-image: cover;
+  border-radius: 0px 450px 0px 0px;
+}
+
+div.conheca {
+  background-color: var(--cor4);
+  color: white;
+  padding: 80px;
+}
+
+div.conheca h3 {
+  font-size: 1.6em;
+}
+
+div.conheca p {
+  padding: 15px 0px;
+}
+
+div.conheca button {
+  margin: 15px 0px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* Feedbacks */
+div.feed {
+  padding: 70px 0px;
+  text-align: center;
+}
+
+div.feed h2 {
+  font-size: 2em;
+}
+
+div.depoimentos {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 31% 32% 31%;
+  text-align: center;
+  gap: 30px;
+}
+
+div.depoimentos div {
+  background-color: var(--cor2);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+div.depoimentos img {
+  width: 100px;
+  height: 100px;
+  background-image: cover;
+  border-radius: 50%;
+}
+
+div.depoimentos p.titulo {
+  padding: 20px 0px;
+  font-size: 1.2em;
+}
+
+/* Consultor */
+section.consultores {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  background-color: var(--cor5);
+  background-image: url(imagens/folhas.png);
+}
+
+div.cons {
+  background-color: var(--cor5);
+  background-image: url(imagens/consultores-g.jpg);
+  background-size: 100%;
+  border-radius: 450px 0px 0px 0px;
+}
+
+div.text {
+  color: white;
+  padding: 80px 50px 80px 100px;
+}
+
+div.text h3 {
+  font-size: 1.6em;
+}
+
+div.text p {
+  padding: 15px 0px;
+}
+
+div.text button {
+  margin: 15px 0px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  padding: 80px 100px 30px;
+  background-color: var(--cor4);
+  color: white;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 24% 18% 18% 30%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer div>img {
+  max-width: 200px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+footer div.empresa {
+  padding-right: 30px;
+}
+
+footer a>img {
+  max-width: 40px;
+  height: auto;
+  padding-top: 20px;
+  padding-right: 10px;
+  filter: grayscale(100%) invert(100%);
+}
+
+div.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+div.nav p {
+  font-size: 1.1em;
+  padding-bottom: 15px;
+}
+
+div.nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  /* Exibe os links como blocos */
+}
+
+footer section div p {
+  padding-bottom: 15px;
+}
+
+footer section div p.titulo {
+  font-size: 1.1em;
+}
+
+footer section div button {
+  margin: 15px 0px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+footer div.final {
+  padding-top: 70px;
+}
+
+footer div.final p {
+  padding-top: 30px;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+footer div.final hr {
+  border-color: rgba(255, 255, 255, 0.065);
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    margin: 0 20px;
+    flex-direction: row;
+    align-items: flex-start;
+
+  }
+  .menu-icon {
+    display: block; /* Mostra o menu-icon em dispositivos móveis */
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  #menu-toggle {
+    display: none; /* Esconde a caixa de seleção real */
+  }
+
+  nav {
+    position: absolute;
+    top: 100%; /* Posiciona o menu abaixo do header */
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Fundo do menu */
+    border-radius: 20px;
+    width: 60%;
+    display: none;
+    flex-direction: column; /* Empilha os links verticalmente em dispositivos móveis */
+    z-index: 1;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid var(--cor2);
+  }
+
+  .header img {
+    max-width: 130px;
+    /* Reduz o tamanho do logo */
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: block;
+  }
+
+  header button{
+    display: none;
+  }
+
+  .consultor-btn {
+    display: none; /* Esconde o botão em dispositivos móveis */
+  }
+  
+  .consultor-icon {
+    display: block; /* Mostra a imagem do ícone em dispositivos móveis */
+    width: 30px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: pointer;
+    /* Outros ajustes de estilo conforme necessário */
+  }
+
+  .text-principal{
+    display: block;
+    text-align: center;
+    padding: 0px 10px;
+  }
+
+  .text-principal h1{
+    font-family: var(--font-destaque);
+    font-size: 2em;
+  }
+
+  .text-principal p{
+    padding: 15px 0px;
+  }
+
+  .text-principal button{
+    padding: 15px 30px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  }
+
+  section+section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  div.pink {
+    grid-template-columns: 1fr; /* Faz os itens se empilharem verticalmente */
+    padding: 20px 20px 0px 20px; /* Reduz o padding para economizar espaço */
+    text-align: center;
+  }
+
+  div.imagem img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    float: none; /* Remove o float para evitar problemas de layout */
+  }
+
+  div.texto {
+    height: auto; /* Permite que a altura da div.texto se ajuste ao seu conteúdo */
+    padding-bottom: 20px; /* Adiciona espaço abaixo do texto antes da próxima seção */
+    text-align: center;
+  }
+
+  div.texto button{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.texto p{
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.gold {
+    grid-template-columns: 1fr; /* Faz os itens se empilharem verticalmente */
+    padding: 20px 20px 0px 20px; /* Reduz o padding para economizar espaço */
+    text-align: center;
+  }
+
+  div.imagem2 img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    float: none; /* Remove o float para evitar problemas de layout */
+  }
+
 }

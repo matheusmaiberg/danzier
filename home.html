@@ -8,8 +8,10 @@
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header>
-      <img src="imagens/logo-azul.png" alt="Logo Danzier">
+    <header class="header">
+      <a href=""><img src="imagens/logo-azul.png" alt="Logo Danzier"></a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <nav>
         <a href="">Home</a>
         <a href="">Sobre Nós</a>
@@ -18,17 +20,20 @@
         <a href="">Contato</a>
       </nav>
       <button href="">Seja um Consultor</button>
+      <img src="svg/icones/usuario.svg" alt="Seja um Consultor" class="consultor-icon">
     </header>
 
     <main>
       <!-- Banner principal -->
-      <section>
-        <picture class="principal">
-          <source media="(max-width: 600px)" srcset="banners/home-p.png">
-          <img src="banners/home-g.png" alt="Banner principal">
-        </picture>
-        <div>
-          <h1>Conheça nossa linha de perfumes Vip Color's</h1>
+      <section class="banner">
+        <a href="">
+          <picture>
+            <source media="(max-width: 768px)" srcset="banners/home-p.png">
+            <img src="banners/home-m.png" alt="Banner principal">
+          </picture>
+        </a>
+        <div class="text-principal">
+          <h1>Conheça nossa linha de perfumes Vip Color's!</h1>
           <p>Deixe-se envolver pela sedução das fragrâncias Vip Color's e descubra o poder de se destacar com elegância. Composto por 12 fragrâncias distintas, cada uma mais envolvente que a outra,</p>
           <button type="button">Conheça a linha</button>
         </div>
@@ -36,60 +41,81 @@
 
       <!-- Loja -->
       <section>
-        <p class="detalhe">Loja</p>
-        <h2 class="titulo">Nossos produtos mais vendidos</h2>
+        <div class="loja">
+          <p class="detalhe">Loja</p>
+          <h2 class="titulo">Nossos produtos mais vendidos</h2>
+        </div>
 
         <!-- Pink -->
-        <div>
-          <p class="detalhe">Fragrância</p>
-          <h2 class="titulo">Pink Fantasia Desodorante Colônia</h2>
-          <p>Uma essência que combina sofisticação e ludicidade. "Pink Fantasia" é um toque de elegância que complementa a personalidade única de cada mulher.</p>
-          <button type="button">Ver mais</button>
-          <img src="banners/pink.png" alt="Fragrância Pink Fantasia">
+        <div class="pink">
+          <div class="texto">
+            <p class="detalhe">Fragrância</p>
+            <h2 class="titulo">Pink Fantasia Desodorante Colônia</h2>
+            <p>Uma essência que combina sofisticação e ludicidade. "Pink Fantasia" é um toque de elegância que complementa a personalidade única de cada mulher.</p>
+            <button type="button">Ver mais</button>
+          </div>
+          <div class="imagem">
+            <img src="banners/pink.png" alt="Fragrância Pink Fantasia">
+          </div>
         </div>
 
         <!-- Gold -->
-        <div>
-          <p class="detalhe">Fragrância</p>
-          <h2 class="titulo">Gold Desodorante Colônia</h2>
-          <p>Esta fragrância é feita para aqueles que apreciam o luxo e desejam envolver-se em uma aura de sofisticação.</p>
-          <button type="button">Ver mais</button>
-          <picture>
-            <source media="(max-width: 600px)" srcset="banners/gold-p.png">
-            <img src="banners/gold-g.png" alt="Fragrância Gold">
-          </picture>
+        <div class="gold">
+          <div class="imagem2">
+            <picture>
+              <source media="(max-width: 600px)" srcset="banners/gold-p.png">
+              <img src="banners/gold-g.png" alt="Fragrância Gold">
+            </picture>
+          </div>
+          <div class="texto2">
+            <p class="detalhe">Fragrância</p>
+            <h2 class="titulo">Gold Desodorante Colônia</h2>
+            <p>Esta fragrância é feita para aqueles que apreciam o luxo e desejam envolver-se em uma aura de sofisticação.</p>
+            <button type="button">Ver mais</button>
+          </div>
         </div>
         
         <!-- Ampolas -->
-        <div>
-          <p class="detalhe">Linha Capilar</p>
-          <h2 class="titulo">Kit Ampolas Mágicas</h2>
-          <p>Proporcione um banho de hidratação para seus fios. Com ingredientes poderosos, estas ampolas devolvem a umidade aos cabelos, deixando-os macios e sedosos.</p>
-          <button type="button">Ver mais</button>
-          <picture>
-            <source media="(max-width: 600px)" srcset="banners/ampolas-p.png">
-            <img src="banners/ampolas-g.png" alt="Ampolas Maágicas">
-          </picture>
+        <div class="ampola">
+          <div class="texto3">
+            <p class="detalhe">Linha Capilar</p>
+            <h2 class="titulo">Kit Ampolas Mágicas</h2>
+            <p>Proporcione um banho de hidratação para seus fios. Com ingredientes poderosos, estas ampolas devolvem a umidade aos cabelos, deixando-os macios e sedosos.</p>
+            <button type="button">Ver mais</button>
+          </div>
+          <div class="imagem3">
+            <picture>
+              <source media="(max-width: 600px)" srcset="banners/capsulas-p.png">
+              <img src="banners/capsulas-g.png" alt="Ampolas Mágicas">
+            </picture>
+          </div>
         </div>
       </section>
     
       <!-- Sobre nós -->
-      <section>
-        <img src="imagens/socios-1-g.jpg" alt="Socios Danzier">
-        <p class="detalhe">Sobre nós</p>
-        <h2 class="titulo">Danzier, muito mais que uma empresa de cosméticos!</h2>
-        <p>Nossa empresa é fruto de um planejamento detalhado e estratégico, seus fundadores com experiência de mercado e com ímpeto do brilhantismo criaram a empresa com um futuro promissor.</p>
-        <p>A Danzier não é somente uma empresa, e sim uma estrutura de performance, que almeja grandes atuações, utilizando dos meios saudáveis e éticos, como lealdade aos seus representantes e aos que fazem parte da sua História.</p>
-        <button type="button">Saiba mais</button>
-        <div>
-          <p><strong>+8</strong> Anos no mercado</p>
-          <p><strong>+134</strong> Consultores ativos</p>
+      <section class="sobre">
+        <div class="socios">
+          <img src="imagens/socios-3-g.png" alt="Socios Danzier">
+        </div>
+        <div class="desc">
+          <div class="desc2">
+            <p class="detalhe">Sobre nós</p>
+            <h2 class="titulo">Danzier, muito mais que uma empresa de cosméticos!</h2>
+            <p>Nossa empresa é fruto de um planejamento detalhado e estratégico, seus fundadores com experiência de mercado e com ímpeto do brilhantismo criaram a empresa com um futuro promissor.</p>
+            <p>A Danzier não é somente uma empresa, e sim uma estrutura de performance, que almeja grandes atuações, utilizando dos meios saudáveis e éticos, como lealdade aos seus representantes e aos que fazem parte da sua História.</p>
+            <button type="button">Saiba mais</button>
+          </div>
+          <div class="info">
+            <p><strong>+8 </strong> Anos no mercado</p>
+            <p><strong>+134 </strong> Consultores ativos</p>
+          </div>
         </div>
       </section>
 
       <!-- Catalogo -->
-      <section>
-        <div>
+      <section class="catalogo">
+        <div class="folha"></div>
+        <div class="conheca">
           <h3 class="titulo">Conheça nosso catalogo!</h3>
           <p>Descubra uma variedade de produtos para realçar sua beleza. De fragrâncias encantadoras a linhas capilares completas, projetadas para elevar sua rotina de cuidados a um novo patamar.</p>
           <button type="button">Ver catalogo</button>
@@ -98,47 +124,47 @@
 
       <!-- Feedbacks -->
       <section>
-        <p class="detalhe">Feedbacks</p>
-        <h2 class="titulo">Clientes que confiam na Danzier</h2>
-
-        <!-- Cliente 1 -->
-        <div>
-          <img src="" alt="">
-          <p class="titulo">Ubira Salles</p>
-          <p>Esta sendo uma virada de chave poder trabalhar com a Danzier, o formato de marketing de rede possibilita o crescimento e valorização do trabalho em equipe, a máxima atenção que todos os colaboradores prestam junto com o trabalho coletivo acaba se criando um forte time e assim motivando cada vez mais a busca do progresso e do sucesso pessoal. Muito grato em poder fazer parte dessa família.</p>
+        <div class="feed">
+          <p class="detalhe">Feedbacks</p>
+          <h2 class="titulo">Clientes que confiam na Danzier</h2>
         </div>
 
-        <!-- Cliente 2 -->
-        <div>
-          <img src="" alt="">
-          <p class="titulo">Ubira Salles</p>
-          <p>Esta sendo uma virada de chave poder trabalhar com a Danzier, o formato de marketing de rede possibilita o crescimento e valorização do trabalho em equipe, a máxima atenção que todos os colaboradores prestam junto com o trabalho coletivo acaba se criando um forte time e assim motivando cada vez mais a busca do progresso e do sucesso pessoal. Muito grato em poder fazer parte dessa família.</p>
-        </div>
-
-        <!-- Cliente 3 -->
-        <div>
-          <img src="" alt="">
-          <p class="titulo">Ubira Salles</p>
-          <p>Esta sendo uma virada de chave poder trabalhar com a Danzier, o formato de marketing de rede possibilita o crescimento e valorização do trabalho em equipe, a máxima atenção que todos os colaboradores prestam junto com o trabalho coletivo acaba se criando um forte time e assim motivando cada vez mais a busca do progresso e do sucesso pessoal. Muito grato em poder fazer parte dessa família.</p>
+        <div class="depoimentos">
+          <!-- Cliente 1 -->
+          <div>
+            <img src="imagens/cliente1.png" alt="">
+            <p class="titulo">Kamilli Koeler</p>
+            <p>Comecei a usar o kit para cachos, e a cada dia fico mais apaixonada com os resultados! Recomendo muuuito. Sem falar no perfume maravilhoso que fica no cabelo. Falando em perfume, também uso a fragrância feminina e o hidratante corporal. Amo muito</p>
+          </div>
+          <!-- Cliente 2 -->
+          <div>
+            <img src="imagens/cliente2.jpg" alt="">
+            <p class="titulo">Ubira Salles</p>
+            <p>Esta sendo uma virada de chave poder trabalhar com a Danzier, o formato de marketing de rede possibilita o crescimento e valorização do trabalho em equipe, a máxima atenção que todos os colaboradores prestam junto com o trabalho coletivo acaba se criando um forte time e assim motivando cada vez mais a busca do progresso e do sucesso pessoal. Muito grato em poder fazer parte dessa família.</p>
+          </div>
+          <!-- Cliente 3 -->
+          <div>
+            <img src="" alt="">
+            <p class="titulo">Ubira Salles</p>
+            <p>Esta sendo uma virada de chave poder trabalhar com a Danzier, o formato de marketing de rede possibilita o crescimento e valorização do trabalho em equipe, a máxima atenção que todos os colaboradores prestam junto com o trabalho coletivo acaba se criando um forte time e assim motivando cada vez mais a busca do progresso e do sucesso pessoal. Muito grato em poder fazer parte dessa família.</p>
+          </div>
         </div>
       </section>
 
       <!-- Consultor -->
-      <section>
-        <div>
+      <section class="consultores">
+        <div class="text">
           <h3 class="titulo">Mude de vida agora mesmo!</h3>
           <p>Tenha a liberdade que sempre desejou, trabalhando do seu jeito e de quebra, ganhe bonus e desconto em milhares de produtos!</p>
           <button type="button">Conheça as vantagens</button>
         </div>
-        <div>
-          <img src="imagens/consultores-g.jpg" alt="Consultores">
-        </div>
+        <div class="cons"></div>
       </section>
 
       <!-- Footer -->
       <footer>
         <section>
-          <div>
+          <div class="empresa">
             <img src="imagens/logo-branca.png" alt="Logo Danzier">
             <p class="titulo">Muito mais que uma empresa de cosméticos!</p>
             <a href=""><img src="svg/icones/facebook.svg" alt="Facebook"></a>
@@ -147,21 +173,21 @@
           </div>
 
         <!-- Danzier -->
-          <div>
+          <div class="nav">
             <p class="titulo">Danzier</p>
-            <a href="">Escritório Virtual</a>
-            <a href="">Seja um Consultor</a>
-            <a href="">Política de Privacidade</a>
-            <a href="">Termos de uso</a>
+            <a href="">Escritório Virtual</a><br>
+            <a href="">Seja um Consultor</a><br>
+            <a href="">Política de Privacidade</a><br>
+            <a href="">Termos de uso</a><br>
           </div>
 
           <!-- Site -->
-          <div>
+          <div class="nav">
             <p class="titulo">Mapa do site</p>
-            <a href="">Home</a>
-            <a href="">Sobre Nós</a>
-            <a href="">Loja</a>
-            <a href="">Contato</a>
+            <a href="">Home</a><br>
+            <a href="">Sobre Nós</a><br>
+            <a href="">Loja</a><br>
+            <a href="">Contato</a><br>
           </div>
 
           <!-- Contato -->
@@ -172,11 +198,13 @@
             <p>Demais localizações: 0000-0000</p>
             <button type="button">Central de atendimento</button>
           </div>
+        </section>
 
-          <!-- Direitos -->
+        <!-- Direitos -->
+        <div class="final">
           <hr>
           <p>Desenvolvido por Groufy Aceleradora - Todos os direitos reservados à Danzier - DANZIER AWDF LTDA - CNPJ: 32.215.171/0001-24 - Rua Hermenegildo de Vargas Fortes, 22 (Quadra 01) - Pontões - Afonso Claudio - ES</p>
-        </section>
+        </div>
       </footer>
 
 
