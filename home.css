@@ -434,12 +434,14 @@ section.consultores {
   padding: 0;
   background-color: var(--cor5);
   background-image: url(imagens/folhas.png);
+  background-repeat: no-repeat;
 }
 
 div.cons {
   background-color: var(--cor5);
   background-image: url(imagens/consultores-g.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
   border-radius: 450px 0px 0px 0px;
 }
 
@@ -557,14 +559,15 @@ footer div.final hr {
 
 @media (max-width: 768px) {
   .header {
-    margin: 0 20px;
+    margin: 0 10px;
     flex-direction: row;
     align-items: flex-start;
-
+    text-align: center;
   }
+
   .menu-icon {
     display: block; /* Mostra o menu-icon em dispositivos móveis */
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     z-index: 2;
   }
@@ -615,7 +618,7 @@ footer div.final hr {
   
   .consultor-icon {
     display: block; /* Mostra a imagem do ícone em dispositivos móveis */
-    width: 30px; /* Ajuste a largura conforme necessário */
+    width: 25px; /* Ajuste a largura conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
     cursor: pointer;
     /* Outros ajustes de estilo conforme necessário */
@@ -638,18 +641,26 @@ footer div.final hr {
 
   .text-principal button{
     padding: 15px 30px;
-  border-radius: 50px;
-  background-color: var(--cor4);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-padrao);
-  font-size: 0.9em;
+    border-radius: 50px;
+    background-color: var(--cor4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
   }
 
   section+section {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  div.loja {
+    padding: 60px 0px;
+  }
+
+  div.loja h2 {
+    font-size: 1.8em;
   }
 
   div.pink {
@@ -683,15 +694,177 @@ footer div.final hr {
   }
 
   div.gold {
+    display: grid;
+    grid-template-columns: 1fr; /* Muda para uma única coluna */
+    grid-template-rows: auto auto; /* Define duas linhas para auto ajuste */
+    gap: 20px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  div.texto2 {
+    order: 1;
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  div.imagem2 {
+    order: 2;
+  }
+
+  div.imagem2 img{
+    width: 100%; 
+    height: auto; 
+    float: none;
+  }
+
+  div.texto2 button{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.texto2 p, h2{
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.ampola {
     grid-template-columns: 1fr; /* Faz os itens se empilharem verticalmente */
     padding: 20px 20px 0px 20px; /* Reduz o padding para economizar espaço */
     text-align: center;
   }
 
-  div.imagem2 img {
+  div.imagem3 img {
     width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
     height: auto; /* Mantém a proporção da imagem */
     float: none; /* Remove o float para evitar problemas de layout */
+  }
+
+  div.texto3 {
+    height: auto; /* Permite que a altura da div.texto se ajuste ao seu conteúdo */
+    padding-bottom: 20px; /* Adiciona espaço abaixo do texto antes da próxima seção */
+    text-align: center;
+  }
+
+  div.texto3 button{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.texto3 p{
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+
+  div.socios img {
+    margin-top: 20px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 20px;
+  }
+
+  div.socios{
+    order: 2;
+  }
+
+  .desc {
+    order: 1;
+    margin-top: 30px; 
+    padding-left: 0; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .desc2 p, .desc2 h2 {
+    padding-right: 0;
+  }
+
+  .info{
+    display: none;
+  }
+
+  section.catalogo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.conheca {
+    padding: 40px;
+  }
+
+  div.folha {
+    order: 2; 
+    padding-bottom: 150px;
+    border-radius: 0px;
+  }
+
+  div.conheca {
+    order: 1; 
+  }
+
+  div.conheca h3, p, button{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+  }
+
+  div.depoimentos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  section.consultores {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  div.cons {
+    padding-top: 250px;
+    border-radius: 0;
+    background-size: cover;
+  }
+
+  div.text {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 50px 20px; /* Reduz o padding para economizar espaço em dispositivos menores */
+  }
+
+  footer section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer div>img {
+    max-width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .empresa{
+    padding-bottom: 20px;
+  }
+
+  footer div.empresa, div.nav {
+    padding-right: 0;
+  }
+
+  footer div.final {
+    padding-top: 50px;
   }
 
 }
