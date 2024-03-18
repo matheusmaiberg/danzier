@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pr-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danzier - Deixando sua vida mais bonita!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="sobre.css">
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <style>
@@ -30,7 +29,7 @@
       padding: 20px 30px;
       border-radius: 10px;
       box-shadow: rgba(105, 105, 105, 0.179) 0px 8px 24px;
-    }
+    } 
 
     .swiper-wrapper {
       align-items: center;
@@ -78,7 +77,7 @@
 <body>
   <!-- Cabeçalho -->
   <header class="header">
-    <a href="#"><img src="imagens/logo-azul.png" alt="Logo Danzier"></a>
+    <a href="https://danzier.com.br/site"><img src="imagens/logo-azul.png" alt="Logo Danzier"></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <nav>
@@ -89,115 +88,95 @@
       <a href="">Contato</a>
     </nav>
     <div>
-      <button type="button" href="">Seja um Consultor</button>
-      <img src="svg/icones/usuario.svg" alt="Seja um Consultor" class="consultor-icon">
+      <a href="https://danzier.com.br/publico/Distribuidor/DistribuidoresCadastro/formulario"><button type="button">Seja um consultor</button></a>
+      <a href="https://danzier.com.br/publico/Distribuidor/DistribuidoresCadastro/formulario"><img src="https://s3-sa-east-1.amazonaws.com/public-http-files/UploadArquivo/Arquivos/danzier_com_br/site/usuario.svg" alt="Seja um Consultor" class="consultor-icon"></a>
     </div>
   </header>
 
   <main>
-    <!-- Banner principal -->
-    <section class="banner">
-      <a href="">
-        <picture>
-          <source media="(max-width: 768px)" srcset="banners/home-p.png">
-          <img src="banners/home-m.png" alt="Banner principal">
-        </picture>
-      </a>
-      <div class="text-principal">
-        <h1>Conheça nossa linha de perfumes Vip Color's!</h1>
-        <p>Deixe-se envolver pela sedução das fragrâncias Vip Color's e descubra o poder de se destacar com elegância.
-          Composto por 12 fragrâncias distintas, cada uma mais envolvente que a outra,</p>
-        <button type="button" href="">Conheça a linha</button>
+    <!-- Sobre nós -->
+    <section class="sobre">
+      <div class="texto-sobre">
+        <p class="detalhe">Danzier</p>
+        <h2 class="titulo">Uma nova perspectiva na indústria de cosméticos!</h2>
+        <p>A Danzier é uma empresa familiar, fundada por agricultores, com um sonho de mudar um cenário que vinha se repetindo de geração em geração. Com a experiência de um dos nossos fundadores no marketing de rede e com as frustrações, vimos a necessidade de levar as pessoas uma empresa séria, com o compromisso de transformar vidas e proporcionar uma nova experiência no mercado entregando produtos de qualidade.</p>
+        <p>Ao ingressarmos no mercado, nos vimos em meio a uma pandemia, precisamos nos reinventar diante da dificuldade em se manter de pé, mudamos a estratégia para que no futuro chegássemos onde almejávamos. Foi então que no início de 2023 retornamos ao sonho de tornar está uma empresa que traria e trás a mudança de vida para nossos clientes e consultores.</p>
+        <p>Somos uma empresa sólida, com bases e princípios, e a nossa missão é criar uma corporação, onde nossos clientes se tornem parceiros e parte dessa grande família. Nos ajude a transformar vidas, e venha fazer parte desta história.</p>
+        <a href="https://danzier.com.br/loja/"><button type="button">Conheça nossa loja</button></a>
+      </div>
+      <div class="imagens">
+        <div class="imagens-socio">
+          <div class="img1">
+            <img src="imagens/socios-2.jpg" alt="Socios Danzier">
+          </div>
+          <div class="img3">
+            <img src="imagens/socios-3-g.png" alt="Socios Danzier">
+          </div>
+        </div>
+        <div class="img2">
+          <img src="imagens/socios-1-g.jpg" alt="Socios Danzier">
+        </div>
+      </div>
+    </section>
+
+    <!-- Informações -->
+    <section class="inform">
+      <p><strong>+8 </strong> ANOS NO MERCADO</p>
+      <p><strong>+134 </strong> CONSULTORES ATIVOS</p>
+      <p><strong>+30 </strong> PRODUTOS LANÇADOS</p>
+    </section>
+
+    <!-- Atendimento -->
+    <section class="atendimento">
+      <div>
+        <p class="detalhe">Atendimento</p>
+        <h2 class="titulo">Já imaginou ser nosso consultor?</h2>
+      </div>
+      <div class="passos">
+        <div>
+          <img src="svg/icones/usuario - 2.svg" alt="Usuário">
+          <p class="titulo">Cadastre-se</p>
+          <p>Ao efetuar o cadastro em nosso site, nossa equipe estrará em contato dentro de 48 horas para agendarmos uma conversa detalhada e marcarmos uma reunião para discutir os proxómos passos.</p>
+        </div>
+        <div>
+          <img src="svg/icones/aula.svg" alt="Treinamento">
+          <p class="titulo">Treinamento</p>
+          <p>Participe dos nossos treinamentos especializados, nos quais você aprenderá sobre os produtos Danzier, técnicas de vendas eficazes e estratégias de marketing comprovadas.</p>
+        </div>
+        <div>
+          <img src="svg/icones/caixa.svg" alt="Caixa">
+          <p class="titulo">Kit inicial</p>
+          <p>Como parte de sua jornada conosco, você receberá um kit inicial exclusivo contendo uma seleção dos nossos produtos mais populares da Danzier, permitindo que você comece a vender imediatamente e aprimore suas habilidades de consultoria.</p>
+        </div>
+        <div>
+          <img src="svg/icones/crescer.svg" alt="Crescimento">
+          <p class="titulo">Crescimento profissional</p>
+          <p>Esteja preparado para explorar diversas oportunidades de crescimento dentro de nossa empresa, desde avançar para cargos de liderança até expandir sua equipe de consultoria. Valorizamos o seu potencial e estamos comprometidos em ajudá-lo a alcançar o sucesso em sua jornada profissional conosco.</p>
+        </div>
       </div>
     </section>
 
     <!-- Loja -->
-    <section>
-      <div class="loja">
-        <p class="detalhe">Loja</p>
-        <h2 class="titulo">Nossos produtos mais vendidos</h2>
+    <section class="loja">
+      <div class="desc-p">
+        <p class="detalhe">LOJA</p>
+        <h2 class="titulo">Nossos produtos mais vendidos!</h2>
+        <p>Entre na nossa loja e escolha o que mais te representa! </p>
+        <a href="https://danzier.com.br/loja/"><button type="button">Conheça nossa loja</button></a>
       </div>
-
-      <!-- Pink -->
-      <div class="pink">
-        <div class="texto">
-          <p class="detalhe">Fragrância</p>
-          <h2 class="titulo">Pink Fantasia Desodorante Colônia</h2>
-          <p>Uma essência que combina sofisticação e ludicidade. "Pink Fantasia" é um toque de elegância que complementa
-            a personalidade única de cada mulher.</p>
-          <button type="button" href="">Ver mais</button>
+      <div class="produtos">
+        <div class="prod">
+          <img src="produtos/[Perfume F Pink] Produtos - Site - Danzier.png" alt="Perfume Pink Fantasia">
+          <a href="https://danzier.com.br/loja/PINK"><button type="button">Ver mais</button></a>
         </div>
-        <div class="imagem">
-          <img src="banners/pink.png" alt="Fragrância Pink Fantasia">
+        <div class="prod">
+          <img src="produtos/[Perfume M Gold] Produtos - Site - Danzier.png" alt="Perfume Gold">
+          <a href="https://danzier.com.br/loja/GOLD"><button type="button">Ver mais</button></a>
         </div>
-      </div>
-
-      <!-- Gold -->
-      <div class="gold">
-        <div class="imagem2">
-          <picture>
-            <source media="(max-width: 768px)" srcset="banners/gold-p.png">
-            <img src="banners/gold-g.png" alt="Fragrância Gold">
-          </picture>
+        <div class="prod">
+          <img src="produtos/[Kit Ampolas] Produtos - Site - Danzier.png" alt="Kit Ampolas Mágicas">
+          <a href="https://danzier.com.br/loja/Cronograma%20Capilar%20Ampolas%20M%C3%A1gicas"><button type="button">Ver mais</button></a>
         </div>
-        <div class="texto2">
-          <p class="detalhe">Fragrância</p>
-          <h2 class="titulo">Gold Desodorante Colônia</h2>
-          <p>Esta fragrância é feita para aqueles que apreciam o luxo e desejam envolver-se em uma aura de sofisticação.
-          </p>
-          <button type="button" href="">Ver mais</button>
-        </div>
-      </div>
-
-      <!-- Ampolas -->
-      <div class="ampola">
-        <div class="texto3">
-          <p class="detalhe">Linha Capilar</p>
-          <h2 class="titulo">Kit Ampolas Mágicas</h2>
-          <p>Proporcione um banho de hidratação para seus fios. Com ingredientes poderosos, estas ampolas devolvem a
-            umidade aos cabelos, deixando-os macios e sedosos.</p>
-          <button type="button" href="">Ver mais</button>
-        </div>
-        <div class="imagem3">
-          <picture>
-            <source media="(max-width: 768px)" srcset="banners/capsulas-p.png">
-            <img src="banners/capsulas-g.png" alt="Ampolas Mágicas">
-          </picture>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre nós -->
-    <section class="sobre">
-      <div class="socios">
-        <img src="imagens/socios-3-g.png" alt="Socios Danzier">
-      </div>
-      <div class="desc">
-        <div class="desc2">
-          <p class="detalhe">Sobre nós</p>
-          <h2 class="titulo">Danzier, muito mais que uma empresa de cosméticos!</h2>
-          <p>Nossa empresa é fruto de um planejamento detalhado e estratégico, seus fundadores com experiência de
-            mercado e com ímpeto do brilhantismo criaram a empresa com um futuro promissor.</p>
-          <p>A Danzier não é somente uma empresa, e sim uma estrutura de performance, que almeja grandes atuações,
-            utilizando dos meios saudáveis e éticos, como lealdade aos seus representantes e aos que fazem parte da sua
-            História.</p>
-          <button type="button">Saiba mais</button>
-        </div>
-        <div class="info">
-          <p><strong>+8 </strong> Anos no mercado</p>
-          <p><strong>+134 </strong> Consultores ativos</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Catalogo -->
-    <section class="catalogo">
-      <div class="folha"></div>
-      <div class="conheca">
-        <h3 class="titulo">Conheça nosso catalogo!</h3>
-        <p>Descubra uma variedade de produtos para realçar sua beleza. De fragrâncias encantadoras a linhas capilares
-          completas, projetadas para elevar sua rotina de cuidados a um novo patamar.</p>
-        <button type="button" href="">Ver catalogo</button>
       </div>
     </section>
 
@@ -331,14 +310,13 @@
     <section class="consultores">
       <div class="text">
         <h3 class="titulo">Mude de vida agora mesmo!</h3>
-        <p>Tenha a liberdade que sempre desejou, trabalhando do seu jeito e de quebra, ganhe bonus e desconto em
-          milhares de produtos!</p>
-        <button type="button" href="">Conheça as vantagens</button>
+        <p>Tenha a liberdade que sempre desejou, trabalhando do seu jeito e de quebra, ganhe bonus e desconto em milhares de produtos!</p>
+        <a href="https://danzier.com.br/publico/Distribuidor/DistribuidoresCadastro/formulario"><button type="button" href="">Conheça as vantagens</button></a>
       </div>
       <div class="cons"></div>
     </section>
   </main>
-  
+
   <!-- Footer -->
   <footer>
     <section>
@@ -346,17 +324,16 @@
         <img src="imagens/logo-branca.png" alt="Logo Danzier">
         <p class="titulo">Muito mais que uma empresa de cosméticos!</p>
         <div class="social-links"> <!-- Contêiner para os links das redes sociais -->
-          <a href="" target="_blank"><img src="svg/icones/facebook.svg" alt="Facebook"></a>
-          <a href=""><img src="svg/icones/instagram.svg" alt="Instagram"></a>
-          <a href=""><img src="svg/icones/tiktok.svg" alt="Tik Tok"></a>
+          <a href="https://www.facebook.com/danzieroficial/" target="_blank"><img src="svg/icones/facebook.svg" alt="Facebook"></a>
+          <a href="https://www.instagram.com/danzieroficial/"><img src="svg/icones/instagram.svg" alt="Instagram"></a>
         </div>
       </div>
 
       <!-- Danzier -->
       <div class="nav">
         <p class="titulo">Danzier</p>
-        <a href="">Escritório Virtual</a><br>
-        <a href="">Seja um Consultor</a><br>
+        <a href="https://danzier.com.br/publico">Escritório Virtual</a><br>
+        <a href="https://danzier.com.br/publico/Distribuidor/DistribuidoresCadastro/formulario">Seja um Consultor</a><br>
         <a href="">Política de Privacidade</a><br>
         <a href="">Termos de uso</a><br>
       </div>
@@ -364,18 +341,18 @@
       <!-- Site -->
       <div class="nav">
         <p class="titulo">Mapa do site</p>
-        <a href="">Home</a><br>
-        <a href="">Sobre Nós</a><br>
-        <a href="">Loja</a><br>
-        <a href="">Contato</a><br>
+        <a href="https://danzier.com.br/site">Home</a><br>
+        <a href="https://danzier.com.br/site/quem-somos">Sobre Nós</a><br>
+        <a href="https://danzier.com.br/loja/">Loja</a><br>
+        <a href="https://danzier.com.br/site/page-contato">Contato</a><br>
       </div>
 
       <!-- Contato -->
       <div>
         <p class="titulo">Fale conosco</p>
         <p>De segunda a sexta das 9hrs ás 18hrs</p>
-        <p>Capitais e regiões metropolitanas: 0000-0000</p>
-        <p>Demais localizações: 0000-0000</p>
+        <p>Capitais e regiões metropolitanas: (28) 99901-3872</p>
+        <p>Demais localizações: (28) 99901-3872</p>
       
         <a href="https://api.whatsapp.com/send?phone=5528999013872&text=Ol%C3%A1%20equipe%20Danzier!"><button type="button">Central de atendimento</button></a>
       </div>
