@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+   
+@font-face {
+  font-family: 'Bomberg';
+  src: url(fonts/IFBombergSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+:root {
+  /* fontes */
+  --font-padrao: 'Open Sans', sans-serif;
+  --font-destaque: 'Bomberg', serif;
+
+  /* Cores */
+  --cor1: #F3F3F3;
+  --cor2: #EAEAEA;
+  --cor3: #6F6F6F;
+  --cor4: #080844;
+  --cor5: #000031;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Body */
+body {
+  background-color: white;
+  font-family: var(--font-padrao);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.detalhe {
+  font-size: 1em;
+  color: var(--cor3);
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.titulo {
+  font-family: var(--font-destaque);
+}
+
+/* Header */
+.header {
+  background-color: var(--cor2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 100px;
+}
+
+.header img {
+  max-width: 200px;
+  height: auto;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  order: -1;
+}
+
+.header nav {
+  display: flex;
+  
+}
+
+.header nav a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+header button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+.consultor-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.consultor-icon {
+  display: none; /* Esconde a imagem do ícone por padrão */
+}
+
+/* Contato */
+
+.contato{
+  margin: 50px 100px 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.contato img{
+  max-width: 470px;
+  width: 100%;
+  border-radius: 20px 20px 20px 150px;
+}
+
+/* Formulário */
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.container-fluid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato h2{
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+label{
+  display: none;
+}
+
+input{
+  background-color: #f3f3f3;
+  margin-bottom: 15px;
+  padding: 15px 200px 15px 15px !important;
+  border-radius: 50px;
+  border: none;
+  font-size: 1em;
+}
+
+form button{
+  background-color: darkblue !important;
+  padding: 15px 180px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+input:hover{
+  border: none;
+}
+
+/* Atendimento */
+.atendimento{
+  margin: 0px 100px 80px;
+  text-align: center;
+}
+
+.atendimento h2{
+  font-size: 2em;
+  padding: 0px 0px 50px;
+}
+
+.passos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.passos div{
+  flex: 1;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 20px;
+  gap: 15px;
+}
+
+.passos img{
+  background-color: var(--cor4);
+  width: 30px;
+  height: auto;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.passos p.titulo{
+  font-size: 1.2em;
+}
+
+/* Consultor */
+section.consultores {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  background-color: var(--cor5);
+  background-image: url(imagens/folhas.png);
+  background-repeat: no-repeat;
+}
+
+div.cons {
+  background-color: var(--cor5);
+  background-image: url(imagens/consultores-g.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 450px 0px 0px 0px;
+}
+
+div.text {
+  color: white;
+  padding: 80px 50px 80px 100px;
+}
+
+div.text h3 {
+  font-size: 1.6em;
+}
+
+div.text p {
+  padding: 15px 0px;
+}
+
+div.text button {
+  margin: 15px 0px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  padding: 80px 100px 30px;
+  background-color: var(--cor4);
+  color: white;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 24% 18% 18% 30%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer div>img {
+  max-width: 200px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+footer div.empresa {
+  padding-right: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: left; /* Centraliza os links no contêiner */
+  align-items: center; /* Alinha verticalmente os ícones */
+  gap: 10px; /* Espaçamento entre os links */
+}
+
+footer a>img {
+  max-width: 40px;
+  height: auto;
+  padding-top: 20px;
+  padding-right: 10px;
+  filter: grayscale(100%) invert(100%);
+}
+
+div.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+div.nav p {
+  font-size: 1.1em;
+  padding-bottom: 15px;
+}
+
+div.nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  /* Exibe os links como blocos */
+}
+
+footer section div p {
+  padding-bottom: 15px;
+}
+
+footer section div p.titulo {
+  font-size: 1.1em;
+}
+
+footer section div button {
+  margin: 15px 0px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+footer div.final {
+  padding-top: 70px;
+}
+
+footer div.final p {
+  padding-top: 30px;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+footer div.final hr {
+  border-color: rgba(255, 255, 255, 0.065);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Fundo do menu */
+    border-radius: 20px;
+    width: 60%;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    box-shadow: 4px 4px 6px 0px #0000001a;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid var(--cor2);
+  }
+
+  .header img {
+    max-width: 130px;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: block;
+  }
+
+  header button{
+    display: none;
+  }
+
+  .consultor-btn {
+    display: none;
+  }
+  
+  .consultor-icon {
+    display: block;
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .contato{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 80px;
+  }
+
+  .contato img{
+    border-radius: 20px 20px 20px 80px;
+  }
+
+  .contato h2{
+    padding-top: 30px;
+  }
+
+  form button{
+    display: flex;
+  }
+
+  .inform {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .atendimento{
+    margin: 80px 50px;
+  }
+
+  .passos div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.depoimentos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  section.consultores {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  div.cons {
+    padding-top: 250px;
+    border-radius: 0;
+    background-size: cover;
+  }
+
+  div.text {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 50px 20px; /* Reduz o padding para economizar espaço em dispositivos menores */
+  }
+
+  footer section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer div>img {
+    max-width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .empresa{
+    padding-bottom: 20px;
+  }
+
+  .social-links {
+    justify-content: center; /* Centraliza os links no contêiner */
+  }
+
+  footer div.empresa, div.nav {
+    padding-right: 0;
+  }
+
+  footer div.final {
+    padding-top: 50px;
+  }
+}
