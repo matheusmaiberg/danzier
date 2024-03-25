@@ -1,32 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste</title>
 </head>
+
 <body>
   <div id="" class="d-block d-sm-block d-md-block col-12 col-sm-6 col-md-6 ">
     <!-- Inicio do formulário -->
     <style>
-      .formulario_corpoformulario_contato_318 {
-        max-width: 100%;
-        margin: 0 auto;
+      .contato {
+        margin: 50px 100px 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
       }
-  
-      .modal.load-bootstrap {
-        top: 0 !important;
+
+      .contato img {
+        max-width: 470px;
+        width: 100%;
+        border-radius: 20px 20px 20px 150px;
       }
-  
-      .modal.load-bootstrap .modal-dialog {
-        padding-top: 15% !important;
+
+      .textos {
+        padding: 0px 50px;
+      }
+
+      .textos h2 {
+        font-size: 2em;
+      }
+
+      .textos p {
+        padding: 5px 0px 30px;
+      }
+
+      .col-3 {
+        flex: 50%;
+        max-width: 50%;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form label {
+        display: none;
+      }
+
+      .formulario_corpo .row {
+        margin-bottom: 0px;
+      }
+
+      .row {
+        display: grid;
+        justify-items: center;
+      }
+
+      hr {
+        display: none;
+      }
+
+      .form-control {
+        background-color: #f3f3f3;
+        border: 1px solid #EAEAEA;
+        border-radius: 50px;
+      }
+
+      .col-md-6 {
+        padding: 0;
+        max-width: 80%;
+      }
+
+      .col-md-12 {
+        display: none;
+      }
+
+      .container-fluid {
+        padding: 0;
+      }
+
+      .btn {
+        cursor: pointer;
+        border: 1px solid #080844;
+        background-color: #080844;
+        border-radius: 50px;
+        padding: 10px 37%;
       }
     </style>
     <script>
-    var idFormulario = '#formulario_contato_318'; var textMensagemTraducao = 'Mensagem'; var textErrorTraducao = 'Erro'; var textAtencaoTraducao = 'Atenção'; var textSucessoTraduacao = 'Sucesso'; 
+      var idFormulario = '#formulario_contato_318'; var textMensagemTraducao = 'Mensagem'; var textErrorTraducao = 'Erro'; var textAtencaoTraducao = 'Atenção'; var textSucessoTraduacao = 'Sucesso'; 
     </script>
     <div class="formulario_corpo formulario_corpoformulario_contato_318">
-      <form target="" class="form form_site_page-contato_0_0" id="formulario_contato_318" action="/site/page-contato/" method="POST" enctype="multipart/form-data">
+      <form target="" class="form form_site_page-contato_0_0" id="formulario_contato_318" action="/site/page-contato/"
+        method="POST" enctype="multipart/form-data">
         <div class="clearfix"></div><input type="hidden" value="1"
           name="formularioda39a3ee5e6b4b0d3255bfef95601890afd80709">
         <div class="container-fluid"><input type="hidden" class="form-control hidden65f9c6835cdfc"
@@ -35,12 +106,12 @@
           <div class="row"><input type="hidden" class="form-control hidden65f9c6835ce6d" name="no_id" value="318"></div>
           <div class="row">
             <div class="col-md-6 form-group"><label>Nome <span style="color:red">*</span></label>
-              <div class="clearfix"></div><input type="text" class="form-control input65f9c6835cf19" name="nome" value=""
-                placeholder="Nome">
+              <div class="clearfix"></div><input type="text" class="form-control input65f9c6835cf19" name="nome"
+                value="" placeholder="Nome">
             </div>
             <div class="col-md-6 form-group"><label>E-mail <span style="color:red">*</span></label>
-              <div class="clearfix"></div><input type="text" class="form-control input65f9c6835d027" name="email" value=""
-                placeholder="E-mail">
+              <div class="clearfix"></div><input type="text" class="form-control input65f9c6835d027" name="email"
+                value="" placeholder="E-mail">
             </div>
           </div>
           <div class="row">
@@ -77,6 +148,5 @@
     </div><!-- Fim do formulário-->
   </div>
 </body>
+
 </html>
-
-
