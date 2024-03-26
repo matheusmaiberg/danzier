@@ -1,0 +1,667 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+   
+@font-face {
+  font-family: 'Bomberg';
+  src: url(fonts/IFBombergSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+:root {
+  /* fontes */
+  --font-padrao: 'Open Sans', sans-serif;
+  --font-destaque: 'Bomberg', serif;
+
+  /* Cores */
+  --cor1: #F3F3F3;
+  --cor2: #EAEAEA;
+  --cor3: #6F6F6F;
+  --cor4: #080844;
+  --cor5: #000031;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Body */
+body {
+  background-color: white;
+  font-family: var(--font-padrao);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.detalhe {
+  font-size: 1em;
+  color: var(--cor3);
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.titulo {
+  font-family: var(--font-destaque);
+}
+
+/* Header */
+.header {
+  background-color: var(--cor2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 100px;
+}
+
+.header img {
+  max-width: 200px;
+  height: auto;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  order: -1;
+}
+
+.header nav {
+  display: flex;
+  
+}
+
+.header nav a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+header button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+.consultor-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.consultor-icon {
+  display: none; /* Esconde a imagem do ícone por padrão */
+}
+
+/* Contato */
+.time{
+  margin: 50px 100px 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.time img{
+  max-width: 470px;
+  width: 100%;
+  border-radius: 20px 20px 20px 150px;
+}
+
+.time button{
+  background-color: var(--cor4);
+  font-family: var(--font-padrao);
+  margin-top: 15px;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.textos h2{
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+.lista{
+  padding: 30px 80px 0px;
+}
+
+.lista p{
+  padding-bottom: 15px;
+}
+
+/* Vantagens */
+.vantagens{
+  margin: 0px 100px 80px;
+  text-align: center;
+}
+
+.vantagens h2{
+  font-size: 2em;
+  padding: 0px 0px 50px;
+}
+
+.passos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.passos div{
+  flex: 1;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 20px;
+  gap: 15px;
+}
+
+.passos img{
+  background-color: var(--cor4);
+  width: 30px;
+  height: auto;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.passos p.titulo{
+  font-size: 1.2em;
+}
+
+/* Catalogo */
+section.catalogo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  background-color: var(--cor4);
+}
+
+div.folha {
+  background-color: var(--cor5);
+  background-image: url(imagens/folhas.png);
+  background-image: cover;
+  border-radius: 0px 450px 0px 0px;
+}
+
+div.conheca {
+  background-color: var(--cor4);
+  color: white;
+  padding: 80px;
+}
+
+div.conheca h3 {
+  font-size: 1.6em;
+}
+
+div.conheca p {
+  padding: 15px 0px;
+}
+
+div.conheca button {
+  margin: 15px 0px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* Loja */
+.loja{
+  display: flex;
+  padding: 80px 100px;
+}
+
+.desc-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -50px -100px;
+  border-radius: 0px 400px 0px 0px;
+}
+
+.desc-p p{
+  color: black;
+  padding: 0px 140px 0px 100px;
+}
+
+.desc-p h2{
+  font-size: 2em;
+  color: black;
+  padding: 5px 140px 10px 100px;
+}
+
+.desc-p button{
+  margin: 20px 140px 0px 100px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.produtos{
+  display: flex;
+}
+
+.prod{
+  max-width: 240px;
+  width: 100%;
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px #00000017;
+}
+
+.produtos img{
+  max-width: 200px;
+  height: auto;
+}
+
+.produtos button{
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: var(--cor4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+}
+
+/* Feedbacks */
+div.feed {
+  padding-top: 10px;
+  text-align: center;
+}
+
+div.feed h2 {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 2em;
+}
+
+/* Consultor */
+section.consultores {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  background-color: var(--cor5);
+  background-image: url(imagens/folhas.png);
+  background-repeat: no-repeat;
+}
+
+div.cons {
+  background-color: var(--cor5);
+  background-image: url(imagens/consultores-g.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 450px 0px 0px 0px;
+}
+
+div.text {
+  color: white;
+  padding: 80px 50px 80px 100px;
+}
+
+div.text h3 {
+  font-size: 1.6em;
+}
+
+div.text p {
+  padding: 15px 0px;
+}
+
+div.text button {
+  margin: 15px 0px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  padding: 80px 100px 30px;
+  background-color: var(--cor4);
+  color: white;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 24% 18% 18% 30%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer div>img {
+  max-width: 200px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+footer div.empresa {
+  padding-right: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: left; /* Centraliza os links no contêiner */
+  align-items: center; /* Alinha verticalmente os ícones */
+  gap: 10px; /* Espaçamento entre os links */
+}
+
+footer a>img {
+  max-width: 40px;
+  height: auto;
+  padding-top: 20px;
+  padding-right: 10px;
+  filter: grayscale(100%) invert(100%);
+}
+
+div.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+div.nav p {
+  font-size: 1.1em;
+  padding-bottom: 15px;
+}
+
+div.nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  /* Exibe os links como blocos */
+}
+
+footer section div p {
+  padding-bottom: 15px;
+}
+
+footer section div p.titulo {
+  font-size: 1.1em;
+}
+
+footer section div button {
+  margin: 15px 0px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-padrao);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+footer div.final {
+  padding-top: 70px;
+}
+
+footer div.final p {
+  padding-top: 30px;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+footer div.final hr {
+  border-color: rgba(255, 255, 255, 0.065);
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Fundo do menu */
+    border-radius: 20px;
+    width: 60%;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    box-shadow: 4px 4px 6px 0px #0000001a;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid var(--cor2);
+  }
+
+  .header img {
+    max-width: 130px;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: block;
+  }
+
+  header button{
+    display: none;
+  }
+
+  .consultor-btn {
+    display: none;
+  }
+  
+  .consultor-icon {
+    display: block;
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .time{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 80px;
+  }
+
+  .time img{
+    border-radius: 20px 20px 20px 80px;
+  }
+
+  .time h2{
+    padding-top: 30px;
+  }
+
+  .lista{
+    padding: 30px 0px 30px;
+  }
+
+  .vantagens{
+    margin: 80px 50px;
+  }
+
+  .passos{
+    justify-content: center;
+  }
+
+  .passos div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  section.catalogo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div.conheca {
+    padding: 40px;
+  }
+
+  div.folha {
+    display: none;
+  }
+
+  div.conheca {
+    background-color: var(--cor5);
+    background-image: url(https://s3-sa-east-1.amazonaws.com/public-http-files/UploadArquivo/Arquivos/danzier_com_br/site/folhas.png);
+    padding: 60px 50px;
+  }
+
+  div.conheca h3, p, button{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+  }
+
+  .loja{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .desc-p{
+    padding: 70px 20px;
+    margin: 0;
+    border-radius: 0px 0px 100px 100px;
+    align-items: center;
+  }
+
+  .desc-p p{
+    padding: 0;
+    text-align: center;
+  }
+
+  .desc-p h2{
+    padding: 5px 20px 10px 20px;
+    text-align: center;
+  }
+
+  .desc-p button{
+    margin: 20px 0px 0px 0px;
+  }
+
+  .produtos{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .prod{
+    max-width: 200px;
+  }
+
+  div.depoimentos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  section.consultores {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 70px; 
+    border-radius: 20px;
+  }
+
+  div.cons {
+    padding-top: 250px;
+    border-radius: 0;
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  div.text {
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 50px 20px; /* Reduz o padding para economizar espaço em dispositivos menores */
+  }
+
+  footer section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  footer div>img {
+    max-width: 150px;
+    padding-bottom: 10px;
+  }
+
+  .empresa{
+    padding-bottom: 20px;
+  }
+
+  .social-links {
+    justify-content: center; /* Centraliza os links no contêiner */
+  }
+
+  footer div.empresa, div.nav {
+    padding-right: 0;
+  }
+
+  footer div.final {
+    padding-top: 50px;
+  }
+}
